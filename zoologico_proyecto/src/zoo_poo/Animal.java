@@ -1,6 +1,7 @@
 package zoo_poo;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public abstract class Animal implements Accion_Animal{
 	
@@ -30,6 +31,10 @@ public abstract class Animal implements Accion_Animal{
 	//Methods - Constructor
 	public String getNombre() {
 		return nombre;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	
 	public String getColor() {
@@ -63,12 +68,12 @@ public abstract class Animal implements Accion_Animal{
 	//Methods - Tipo - Abstract
 	public abstract String getTipo();
 	
-	//Method - toStrings
+	//Method - toString
 	public String toString() {
-		return "Nombre: " + this.getNombre() + "\t\t\tEspecie: " + this.getTipo()
-		+ "\nColor: " + this.getColor() + "\t\t\tHabitat: " + this.getHabitat()
-		+ "\nAccion: " + this.getAccion() + "\t\t\tCantidad en el Zoo: "
-		+ this.getCantidad();
+		return "Nombre: " + this.getNombre() + "          Especie: " + this.getTipo()
+		+ "\nColor: " + this.getColor() + "               Habitat: " + this.getHabitat()
+		+ "\nAccion: " + this.getAccion() + "\nCantidad en el Zoo: "
+		+ this.getCantidad() + "\n";
 	}
 	
 	
