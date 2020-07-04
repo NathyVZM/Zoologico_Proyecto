@@ -1,5 +1,6 @@
 package zoo_poo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Mamifero extends Animal{
@@ -8,6 +9,7 @@ public class Mamifero extends Animal{
 	
 	//Attributes
 	private String habitat;
+	private ArrayList array;
 	
 	//Constructor
 	public Mamifero(String nombre, String color) {
@@ -30,5 +32,9 @@ public class Mamifero extends Animal{
 	//Methods - Tipo - Overriding
 	public String getTipo() {
 		return "Mamifero";
+	}
+	
+	public void setMamifero(ArrayList array) {
+		this.array = array;
 	}
 }

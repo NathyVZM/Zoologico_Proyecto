@@ -37,6 +37,11 @@ public class Main {
 		mamiferos.add(tigre);
 		mamiferos.add(delfin);
 		
+		/*mamiferos.get(1).setMamifero(mamiferos);
+		mamiferos.get(2).setMamifero(mamiferos);
+		mamiferos.get(3).setMamifero(mamiferos);
+		*/
+		
 		
 		//Aves
 		Ave perico = new Ave("Perico", "Verde");
